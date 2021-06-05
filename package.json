@@ -32,7 +32,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build docs",
+    "build": "rm -rf ./docs && react-scripts build && mv build docs",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "test": "react-scripts test",
     "test-cov": "react-scripts test --coverage --no-watch --watchAll=false",

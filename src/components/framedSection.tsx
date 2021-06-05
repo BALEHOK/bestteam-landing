@@ -9,6 +9,8 @@ interface Props {
 const useStyles = createUseStyles({
   root: {
     border: `1px solid ${colors.lightOrange}`,
+    display: 'flex',
+    flexDirection: 'column',
     margin: '45px 0',
     padding: '20px 25px',
     [mediaQueries.upXs]: {

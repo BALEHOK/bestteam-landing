@@ -1,7 +1,8 @@
 import { createUseStyles } from 'react-jss';
-import { colors, fonts, mediaQueries } from './lib/styleUtils';
+import { colors, mediaQueries } from './lib/styleUtils';
 import { FramedSection } from './components/framedSection';
 import flagBullet from './assets/flag-bullet.svg';
+import { Button } from './components/button';
 
 const useStyles = createUseStyles({
   h1: {
@@ -53,7 +54,17 @@ const useStyles = createUseStyles({
     '& + &': {
       marginTop: 30
     }
+  },
+  button: {
+    marginTop: 45,
+    [mediaQueries.upXs]: {
+      marginTop: 60,
+    },
+    [mediaQueries.upLg]: {
+      marginTop: 80
+    },
   }
+
 });
 
 export const SectionUtp = () => {
@@ -80,6 +91,9 @@ export const SectionUtp = () => {
           подскажем, как лучше дать информацию о зарплате и бонусах
         </div>
       </div>
+      <Button className={classes.button} onClick={() => console.log('a')}>
+        Написать задачи
+      </Button>
     </FramedSection>
   );
 };

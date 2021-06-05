@@ -24,5 +24,7 @@ export const fonts = {
 export const colors = {
   blue: '#698dbe',
   darkerBlue: '#2f4c76',
+  beige: '#f5f2e9',
+  orange: '#ec9a36',
   lightOrange: '#e2931d'
 };

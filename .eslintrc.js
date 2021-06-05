@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2020: true,
+    es2021: true,
   },
   extends: [
     'eslint:recommended',
@@ -13,7 +13,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 11,
+    ecmaVersion: 12,
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint'],
@@ -22,6 +22,7 @@ module.exports = {
     curly: ['error', 'all'],
     indent: ['error', 2, { SwitchCase: 1, offsetTernaryExpressions: true }],
     'linebreak-style': ['error', 'unix'],
+    'max-len': ['error', { 'code': 80 }],
     'no-case-declarations': 'off',
     'no-console': 'warn',
     'no-unused-vars': 'off', // covered by '@typescript-eslint/no-unused-vars'

@@ -8,7 +8,7 @@ interface Props {
 
 const useStyles = createUseStyles({
   root: {
-    border: `1px solid ${colors.lightOrange}`,
+    border: `1px solid ${colors.orange2}`,
     display: 'flex',
     flexDirection: 'column',
     margin: '45px 0',

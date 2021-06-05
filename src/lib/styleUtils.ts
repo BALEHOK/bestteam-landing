@@ -1,3 +1,5 @@
+import { JssStyle } from 'jss';
+
 export const mediaBreakpoints = {
   xs: 600,
   md: 1280,
@@ -26,5 +28,5 @@ export const colors = {
   darkerBlue: '#2f4c76',
   beige: '#f5f2e9',
   orange: '#ec9a36',
-  lightOrange: '#e2931d'
+  orange2: '#e2931d'
 };

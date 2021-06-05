@@ -2,6 +2,8 @@ import { Header } from './header';
 import { createUseStyles } from 'react-jss';
 import { fonts, mediaBreakpoints, mediaQueries } from './lib/styleUtils';
 import { SectionUtp } from './section1.utp';
+import React from 'react';
+import { SectionWelcomePasha } from './section2.welcomePasha';
 
 const useStyles = createUseStyles({
   root: {
@@ -26,6 +28,7 @@ const App = () => {
       <Header />
       <main>
         <SectionUtp />
+        <SectionWelcomePasha />
       </main>
     </div>
   );

@@ -31,6 +31,10 @@ const useStyles = createUseStyles({
       fontSize: 60,
       padding: '12px 26px'
     },
+
+    '&:hover': {
+      backgroundColor: colors.orange2
+    }
   },
 });
 

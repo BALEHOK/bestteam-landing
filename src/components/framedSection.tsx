@@ -11,14 +11,14 @@ const useStyles = createUseStyles({
     border: `1px solid ${colors.orange2}`,
     display: 'flex',
     flexDirection: 'column',
-    margin: '45px 0',
+    marginTop: 45,
     padding: '20px 25px',
     [mediaQueries.upXs]: {
-      margin: '60px 0',
+      marginTop: 60,
       padding: '40px 51px',
     },
     [mediaQueries.upLg]: {
-      margin: '124px 0',
+      marginTop: 124,
       padding: '80px 102px',
     },
   },

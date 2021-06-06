@@ -1,48 +1,14 @@
 import { createUseStyles } from 'react-jss';
 import { mediaQueries } from './lib/styleUtils';
 import pasha1 from './assets/pasha1.svg';
-
-const useStyles = createUseStyles({
-  root: {
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
-    [mediaQueries.upXs]: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-    },
-  },
-  p: {
-    fontSize: 16,
-    [mediaQueries.upXs]: {
-      fontSize: 24,
-      marginRight: 65,
-      textAlign: 'right',
-    },
-    [mediaQueries.upLg]: {
-      fontSize: 48,
-    },
-  },
-  image: {
-    width: '100%',
-    [mediaQueries.upXs]: {
-      height: 415
-    },
-    [mediaQueries.upLg]: {
-      height: 830
-    },
-  }
-});
-
-// img     height: 415px;
-// p font-size: 24px;
+import { useStyles } from './pashSection.styles';
 
 export const SectionWelcomePasha = () => {
-  const classes = useStyles();
+  const classes = useStyles({ right: false });
 
   return (
     <div className={classes.root}>
-      <div>
+      <div className={classes.textContainer}>
         <p className={classes.p}>
           Знакомтесь, это Паша.<br />
         Паша - предприниматель.

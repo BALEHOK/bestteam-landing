@@ -4,6 +4,7 @@ import { fonts, mediaBreakpoints, mediaQueries } from './lib/styleUtils';
 import { SectionUtp } from './section1.utp';
 import React from 'react';
 import { SectionWelcomePasha } from './section2.welcomePasha';
+import { SectionQuestions } from './section3.questions';
 
 const useStyles = createUseStyles({
   root: {
@@ -29,6 +30,7 @@ const App = () => {
       <main>
         <SectionUtp />
         <SectionWelcomePasha />
+        <SectionQuestions />
       </main>
     </div>
   );

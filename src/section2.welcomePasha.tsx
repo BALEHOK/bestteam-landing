@@ -1,10 +1,8 @@
-import { createUseStyles } from 'react-jss';
-import { mediaQueries } from './lib/styleUtils';
 import pasha1 from './assets/pasha1.svg';
-import { useStyles } from './pashSection.styles';
+import { usePashaSectionStyles } from './pashSection.styles';
 
 export const SectionWelcomePasha = () => {
-  const classes = useStyles({ right: false });
+  const classes = usePashaSectionStyles({ imageRight: true });
 
   return (
     <div className={classes.root}>

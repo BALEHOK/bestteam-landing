@@ -5,6 +5,9 @@ import { SectionUtp } from './section1.utp';
 import React from 'react';
 import { SectionWelcomePasha } from './section2.welcomePasha';
 import { SectionQuestions } from './section3.questions';
+import { SectionHH } from './section4.hh';
+import { Section4Hours2 } from './section5.4hours2';
+import { SectionRightPeople } from './section6.rightPeople';
 
 const useStyles = createUseStyles({
   root: {
@@ -31,6 +34,9 @@ const App = () => {
         <SectionUtp />
         <SectionWelcomePasha />
         <SectionQuestions />
+        <SectionHH />
+        <Section4Hours2 />
+        <SectionRightPeople />
       </main>
     </div>
   );

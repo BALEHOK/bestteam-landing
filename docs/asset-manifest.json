@@ -1,24 +1,30 @@
 {
   "files": {
     "main.css": "./static/css/main.9deb49af.chunk.css",
-    "main.js": "./static/js/main.34ca36a8.chunk.js",
-    "main.js.map": "./static/js/main.34ca36a8.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.6ab409ae.js",
-    "runtime-main.js.map": "./static/js/runtime-main.6ab409ae.js.map",
-    "static/js/2.c4cd938e.chunk.js": "./static/js/2.c4cd938e.chunk.js",
-    "static/js/2.c4cd938e.chunk.js.map": "./static/js/2.c4cd938e.chunk.js.map",
-    "static/js/3.9931bd72.chunk.js": "./static/js/3.9931bd72.chunk.js",
-    "static/js/3.9931bd72.chunk.js.map": "./static/js/3.9931bd72.chunk.js.map",
+    "main.js": "./static/js/main.74f2b343.chunk.js",
+    "main.js.map": "./static/js/main.74f2b343.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.14a64ddc.js",
+    "runtime-main.js.map": "./static/js/runtime-main.14a64ddc.js.map",
+    "static/js/2.d12bd7b9.chunk.js": "./static/js/2.d12bd7b9.chunk.js",
+    "static/js/2.d12bd7b9.chunk.js.map": "./static/js/2.d12bd7b9.chunk.js.map",
+    "static/js/3.60d44218.chunk.js": "./static/js/3.60d44218.chunk.js",
+    "static/js/3.60d44218.chunk.js.map": "./static/js/3.60d44218.chunk.js.map",
     "index.html": "./index.html",
     "static/css/main.9deb49af.chunk.css.map": "./static/css/main.9deb49af.chunk.css.map",
-    "static/js/2.c4cd938e.chunk.js.LICENSE.txt": "./static/js/2.c4cd938e.chunk.js.LICENSE.txt",
+    "static/js/2.d12bd7b9.chunk.js.LICENSE.txt": "./static/js/2.d12bd7b9.chunk.js.LICENSE.txt",
     "static/media/flag-bullet.9328461c.svg": "./static/media/flag-bullet.9328461c.svg",
-    "static/media/logo.c19ee2d3.png": "./static/media/logo.c19ee2d3.png"
+    "static/media/logo.c19ee2d3.png": "./static/media/logo.c19ee2d3.png",
+    "static/media/oval-blue.2ce2bfbd.svg": "./static/media/oval-blue.2ce2bfbd.svg",
+    "static/media/pasha1.ea02da27.svg": "./static/media/pasha1.ea02da27.svg",
+    "static/media/pasha2.c030f9fd.svg": "./static/media/pasha2.c030f9fd.svg",
+    "static/media/pasha3.c2c5e483.svg": "./static/media/pasha3.c2c5e483.svg",
+    "static/media/pasha4.2.1c7f801c.svg": "./static/media/pasha4.2.1c7f801c.svg",
+    "static/media/pasha5.52d0c3a8.svg": "./static/media/pasha5.52d0c3a8.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ab409ae.js",
-    "static/js/2.c4cd938e.chunk.js",
+    "static/js/runtime-main.14a64ddc.js",
+    "static/js/2.d12bd7b9.chunk.js",
     "static/css/main.9deb49af.chunk.css",
-    "static/js/main.34ca36a8.chunk.js"
+    "static/js/main.74f2b343.chunk.js"
   ]
 }

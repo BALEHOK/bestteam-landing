@@ -1,7 +1,7 @@
 import { createUseStyles } from 'react-jss';
 import pasha4 from './assets/pasha4.svg';
 import { mediaQueries } from './lib/styleUtils';
-import { usePashaSectionStyles } from './pashSection.styles';
+import { usePashaSectionStyles } from './section.styles';
 
 export const useStyles = createUseStyles({
   root: {

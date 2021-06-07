@@ -8,6 +8,7 @@ import { SectionQuestions } from './section3.questions';
 import { SectionHH } from './section4.hh';
 import { Section4Hours2 } from './section5.4hours2';
 import { SectionRightPeople } from './section6.rightPeople';
+import { SectionNeedBT } from './section7.needBt';
 
 const useStyles = createUseStyles({
   root: {
@@ -37,6 +38,7 @@ const App = () => {
         <SectionHH />
         <Section4Hours2 />
         <SectionRightPeople />
+        <SectionNeedBT />
       </main>
     </div>
   );

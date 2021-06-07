@@ -1,5 +1,3 @@
-import { JssStyle } from 'jss';
-
 export const mediaBreakpoints = {
   xs: 600,
   md: 1280,

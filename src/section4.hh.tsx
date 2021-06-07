@@ -1,5 +1,5 @@
 import pasha3 from './assets/pasha3.svg';
-import { usePashaSectionStyles } from './pashSection.styles';
+import { usePashaSectionStyles } from './section.styles';
 
 export const SectionHH = () => {
   const classes = usePashaSectionStyles({ imageRight: true });

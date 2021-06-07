@@ -1,14 +1,10 @@
 import classNames from 'classnames';
-import { ReactNode } from 'react';
 import { createUseStyles } from 'react-jss';
-import { TFunction } from '../lib/functionTypes';
 import { colors, fonts, mediaQueries } from '../lib/styleUtils';
 
-interface Props {
-  children: ReactNode;
-  className?: string;
-  onClick: TFunction;
-}
+
+type Props = React.DetailedHTMLProps<
+  React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 
 const useStyles = createUseStyles({
   root: {
@@ -34,15 +30,18 @@ const useStyles = createUseStyles({
 
     '&:hover': {
       backgroundColor: colors.orange2
+    },
+    '&:active': {
+      filter: 'brightness(85%)',
     }
   },
 });
 
-export const Button = ({ children, className, onClick }: Props) => {
+export const Button = ({ children, className, ...rest }: Props) => {
   const classes = useStyles();
 
   return (
-    <button className={classNames(classes.root, className)} onClick={onClick}>
+    <button className={classNames(classes.root, className)} {...rest} >
       {children}
     </button>
   );

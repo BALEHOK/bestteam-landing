@@ -22,9 +22,10 @@ export const fonts = {
 };
 
 export const colors = {
+  lightBlue: '#cfe1ed',
   blue: '#698dbe',
-  darkerBlue: '#2f4c76',
+  darkBlue: '#2f4c76',
   beige: '#f5f2e9',
   orange: '#ec9a36',
-  orange2: '#e2931d'
+  orange2: '#e2931d',
 };

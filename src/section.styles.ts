@@ -30,7 +30,7 @@ export const useSectionStyles = createUseStyles({
     alignItems: 'center',
   },
   h1: {
-    color: colors.darkerBlue,
+    color: colors.darkBlue,
     fontSize: 22,
     [mediaQueries.upXs]: {
       fontSize: 32,

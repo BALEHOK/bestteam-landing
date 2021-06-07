@@ -37,8 +37,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "package": "cp ./docs/CNAME ./build && rm -rf ./docs && mv build docs",
-    "deploy": "yarn build && yarn package && git add . && git commit \"build\" && git push",
+    "package": "cp ./docs/CNAME ./build && rm -rf ./docs && mv ./build ./docs",
+    "deploy": "yarn build && yarn package && git add . && git commit -m \"build\" && git push",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "test": "react-scripts test",
     "test-cov": "react-scripts test --coverage --no-watch --watchAll=false",

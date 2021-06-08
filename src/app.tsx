@@ -12,6 +12,8 @@ import { SectionNeedBT } from './section7.needBt';
 import { Popup } from './popup';
 import { AppContext } from './appContext';
 
+const apiHost = process.env.REACT_APP_API_HOST || 'http://localhost:4000';
+
 const useStyles = createUseStyles({
   root: {
     fontFamily: fonts.primary,
@@ -28,7 +30,7 @@ const useStyles = createUseStyles({
 });
 
 const sendTasks = (tasks, tryNumber = 1) => {
-  fetch('http://localhost:4000/api/tasksInquiry', {
+  fetch(`${apiHost}/api/tasksInquiry`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

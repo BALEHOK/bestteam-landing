@@ -72,9 +72,6 @@ export const SectionNeedBT = () => {
           вакансии, которое снизит вероятность ошибки в найме.
         </p>
       </div>
-      <div className={classesSection.columnCenter}>
-        <ButtonTasks />
-      </div>
     </>
   );
 };

@@ -1,7 +1,7 @@
 export const mediaBreakpoints = {
   xs: 600,
   md: 1280,
-  lg: 1920
+  lg: 1600
 };
 
 const makeMediaQuery = (upOrDown: 'up' | 'down', width: number) =>

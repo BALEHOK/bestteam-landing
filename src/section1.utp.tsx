@@ -27,7 +27,7 @@ export const SectionUtp = () => {
   return (
     <FramedSection>
       <h1 className={classesSection.h1}>
-        Напиши задачи будущего сотрудника и получи на e-mail готовое
+        Напишите задачи будущего сотрудника и получи на e-mail готовое
         на 80% описание вакансии
       </h1>
       <div className={classes.points}>

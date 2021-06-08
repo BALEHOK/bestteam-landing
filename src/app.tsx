@@ -1,6 +1,6 @@
 import { Header } from './header';
 import { createUseStyles } from 'react-jss';
-import { fonts, mediaBreakpoints, mediaQueries } from './lib/styleUtils';
+import { fonts, mediaQueries } from './lib/styleUtils';
 import { SectionUtp } from './section1.utp';
 import { useState } from 'react';
 import { SectionWelcomePasha } from './section2.welcomePasha';
@@ -18,7 +18,7 @@ const apiHost = process.env.REACT_APP_API_HOST || 'http://localhost:4000';
 const useStyles = createUseStyles({
   root: {
     fontFamily: fonts.primary,
-    maxWidth: mediaBreakpoints.lg,
+    maxWidth: 1920,
     margin: '0 auto',
     padding: 10,
     [mediaQueries.upXs]: {

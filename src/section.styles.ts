@@ -104,7 +104,6 @@ export const usePashaSectionStyles = createUseStyles<string, Props>({
         imageRight ? 65 : 0,
       textAlign: ({ imageRight }: Props) =>
         imageRight ? 'left' : 'right',
-
     }
   },
   p,

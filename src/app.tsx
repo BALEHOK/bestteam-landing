@@ -2,7 +2,7 @@ import { Header } from './header';
 import { createUseStyles } from 'react-jss';
 import { fonts, mediaBreakpoints, mediaQueries } from './lib/styleUtils';
 import { SectionUtp } from './section1.utp';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SectionWelcomePasha } from './section2.welcomePasha';
 import { SectionQuestions } from './section3.questions';
 import { SectionHH } from './section4.hh';
@@ -11,6 +11,7 @@ import { SectionRightPeople } from './section6.rightPeople';
 import { SectionNeedBT } from './section7.needBt';
 import { Popup } from './popup';
 import { AppContext } from './appContext';
+import { Section8HowItWorks } from './section8.howItWorks';
 
 const apiHost = process.env.REACT_APP_API_HOST || 'http://localhost:4000';
 
@@ -70,6 +71,7 @@ const App = () => {
           <Section4Hours2 />
           <SectionRightPeople />
           <SectionNeedBT />
+          <Section8HowItWorks />
 
         </main>
 

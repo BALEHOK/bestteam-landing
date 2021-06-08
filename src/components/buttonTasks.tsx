@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import { createUseStyles } from 'react-jss';
+import { AppContext } from '../appContext';
 import { mediaQueries } from '../lib/styleUtils';
 import { Button } from './button';
 
@@ -16,9 +18,10 @@ const useStyles = createUseStyles({
 
 export const ButtonTasks = () => {
   const classes = useStyles();
+  const { setPopupVisible } = useContext(AppContext);
 
   return (
-    <Button className={classes.root} onClick={() => console.log('a')}>
+    <Button className={classes.root} onClick={() => setPopupVisible(true)}>
       Написать задачи
     </Button>
   );

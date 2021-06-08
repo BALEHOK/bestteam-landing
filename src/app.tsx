@@ -10,6 +10,7 @@ import { Section4Hours2 } from './section5.4hours2';
 import { SectionRightPeople } from './section6.rightPeople';
 import { SectionNeedBT } from './section7.needBt';
 import { Popup } from './popup';
+import { AppContext } from './appContext';
 
 const useStyles = createUseStyles({
   root: {
@@ -47,34 +48,35 @@ const sendTasks = (tasks, tryNumber = 1) => {
 const App = () => {
   const classes = useStyles();
 
-  const [popupVisible, setPopupVisible] = useState(true);
+  const [popupVisible, setPopupVisible] = useState(false);
 
   const onClose = () => setPopupVisible(false);
   const onTasksSubmit = (tasks) => {
-    console.log(tasks);
     sendTasks(tasks);
     onClose();
   };
 
   return (
-    <div className={classes.root}>
-      <Header />
-      <main>
-        <SectionUtp />
-        <SectionWelcomePasha />
-        <SectionQuestions />
-        <SectionHH />
-        <Section4Hours2 />
-        <SectionRightPeople />
-        <SectionNeedBT />
+    <AppContext.Provider value={{ setPopupVisible }}>
+      <div className={classes.root}>
+        <Header />
+        <main>
+          <SectionUtp />
+          <SectionWelcomePasha />
+          <SectionQuestions />
+          <SectionHH />
+          <Section4Hours2 />
+          <SectionRightPeople />
+          <SectionNeedBT />
 
-      </main>
+        </main>
 
-      {popupVisible &&
-        <Popup onClose={onClose}
-          onSubmit={onTasksSubmit} />
-      }
-    </div>
+        {popupVisible &&
+          <Popup onClose={onClose}
+            onSubmit={onTasksSubmit} />
+        }
+      </div>
+    </AppContext.Provider>
   );
 };
 

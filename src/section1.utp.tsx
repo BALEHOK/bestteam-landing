@@ -27,7 +27,7 @@ export const SectionUtp = () => {
   return (
     <FramedSection>
       <h1 className={classesSection.h1}>
-        Напишите задачи будущего сотрудника и получи на e-mail готовое
+        Напишите задачи будущего сотрудника и получите на e-mail готовое
         на 80% описание вакансии
       </h1>
       <div className={classes.points}>
@@ -37,7 +37,7 @@ export const SectionUtp = () => {
         </div>
         <div className={classesSection.point}>
           максимально конкретно и ясно сформулируем задачи так, что будет
-          понятно даже твоей маме
+          понятно даже вашей маме
         </div>
         <div className={classesSection.point}>
           предложим на выбор &quot;продающие&quot; варианты описания

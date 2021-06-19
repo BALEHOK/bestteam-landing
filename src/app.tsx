@@ -12,6 +12,7 @@ import { SectionNeedBT } from './section7.needBt';
 import { Popup } from './popup';
 import { AppContext } from './appContext';
 import { Section8HowItWorks } from './section8.howItWorks';
+import { Section11Team } from './section11.team';
 
 const apiHost = process.env.REACT_APP_API_HOST || 'http://localhost:4000';
 
@@ -22,10 +23,10 @@ const useStyles = createUseStyles({
     margin: '0 auto',
     padding: 10,
     [mediaQueries.upXs]: {
-      padding: 30
+      padding: 30,
     },
     [mediaQueries.upLg]: {
-      padding: 65
+      padding: 65,
     },
   },
 });
@@ -34,16 +35,18 @@ const sendTasks = (tasks, tryNumber = 1) => {
   fetch(`${apiHost}/api/tasksInquiry`, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
-    body: JSON.stringify(tasks)
+    body: JSON.stringify(tasks),
   }).catch(() => {
     if (tryNumber < 3) {
       setTimeout(() => sendTasks(tasks, tryNumber + 1), 3000);
     } else {
-      alert('Случилась какая-то ошибка и ваш запрос не был отправлен. '
-        + 'Попробуйте еще раз или напишите нам на info@bestteam.io. '
-        + 'Хорошего дня!');
+      alert(
+        'Случилась какая-то ошибка и ваш запрос не был отправлен. ' +
+          'Попробуйте еще раз или напишите нам на info@bestteam.io. ' +
+          'Хорошего дня!'
+      );
     }
   });
 };
@@ -72,13 +75,10 @@ const App = () => {
           <SectionRightPeople />
           <SectionNeedBT />
           <Section8HowItWorks />
-
+          <Section11Team />
         </main>
 
-        {popupVisible &&
-          <Popup onClose={onClose}
-            onSubmit={onTasksSubmit} />
-        }
+        {popupVisible && <Popup onClose={onClose} onSubmit={onTasksSubmit} />}
       </div>
     </AppContext.Provider>
   );

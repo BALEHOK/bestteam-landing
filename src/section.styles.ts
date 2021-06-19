@@ -1,6 +1,6 @@
 import { createUseStyles } from 'react-jss';
 import { JssStyle } from 'jss';
-import { colors, mediaQueries } from './lib/styleUtils';
+import { colors, fonts, mediaQueries } from './lib/styleUtils';
 import flagBullet from './assets/flag-bullet.svg';
 
 interface Props {
@@ -14,6 +14,16 @@ const p: JssStyle = {
   },
   [mediaQueries.upLg]: {
     fontSize: 48,
+  },
+};
+
+const text: JssStyle = {
+  fontSize: 16,
+  [mediaQueries.upXs]: {
+    fontSize: 17,
+  },
+  [mediaQueries.upLg]: {
+    fontSize: 32,
   },
 };
 
@@ -40,6 +50,19 @@ export const useSectionStyles = createUseStyles({
     },
   },
   h2: {
+    color: colors.darkBlue,
+    fontSize: 18,
+    [mediaQueries.upXs]: {
+      fontSize: 28,
+    },
+    [mediaQueries.upLg]: {
+      fontSize: 56,
+    },
+  },
+  h3: {
+    color: colors.orange2,
+    textTransform: 'uppercase',
+    fontFamily: fonts.bt,
     fontSize: 18,
     [mediaQueries.upXs]: {
       fontSize: 28,
@@ -49,6 +72,7 @@ export const useSectionStyles = createUseStyles({
     },
   },
   p,
+  text,
   point: {
     backgroundImage: `url(${flagBullet})`,
     backgroundRepeat: 'no-repeat',
@@ -75,8 +99,8 @@ export const useSectionStyles = createUseStyles({
     },
 
     '& + &': {
-      marginTop: 30
-    }
+      marginTop: 30,
+    },
   },
 });
 
@@ -98,13 +122,12 @@ export const usePashaSectionStyles = createUseStyles<string, Props>({
   },
   textContainer: {
     [mediaQueries.upXs]: {
-      marginLeft: ({ imageRight }: Props) =>
-        imageRight ? 0 : 65,
-      marginRight: ({ imageRight }: Props) =>
-        imageRight ? 65 : 0,
-      textAlign: ({ imageRight }: Props) =>
-        imageRight ? 'left' : 'right',
-    }
+      flex: 1,
+
+      marginLeft: ({ imageRight }: Props) => (imageRight ? 0 : 65),
+      marginRight: ({ imageRight }: Props) => (imageRight ? 65 : 0),
+      textAlign: ({ imageRight }: Props) => (imageRight ? 'right' : 'left'),
+    },
   },
   p,
   image: {

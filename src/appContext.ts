@@ -8,5 +8,5 @@ interface AppContext {
 export const AppContext = React.createContext<AppContext>({
   setPopupVisible: () => {
     // empty
-  }
+  },
 });

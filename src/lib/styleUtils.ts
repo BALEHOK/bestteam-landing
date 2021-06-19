@@ -1,7 +1,7 @@
 export const mediaBreakpoints = {
   xs: 600,
   md: 1280,
-  lg: 1600
+  lg: 1600,
 };
 
 const makeMediaQuery = (upOrDown: 'up' | 'down', width: number) =>
@@ -18,7 +18,7 @@ export const mediaQueries = {
 
 export const fonts = {
   bt: '"BT Regular", Verdana',
-  primary: '"Avenir Next", Roboto'
+  primary: '"Avenir Next", Roboto',
 };
 
 export const colors = {

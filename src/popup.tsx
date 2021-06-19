@@ -14,7 +14,7 @@ export interface TasksSubmit {
 }
 
 interface Props {
-  onClose: TFunction,
+  onClose: TFunction;
   onSubmit: TFunction1<TasksSubmit>;
 }
 
@@ -49,12 +49,12 @@ export const useStyles = createUseStyles({
   },
   dirty: {
     '& :invalid': {
-      boxShadow: '0 0 5px 1px red'
-    }
+      boxShadow: '0 0 5px 1px red',
+    },
   },
   button: {
     marginTop: 20,
-  }
+  },
 });
 
 export const Popup = ({ onClose, onSubmit }: Props) => {
@@ -66,7 +66,6 @@ export const Popup = ({ onClose, onSubmit }: Props) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [tasks, setTasks] = useState('');
-
 
   const closePopup = () => {
     noScroll.off();
@@ -83,40 +82,58 @@ export const Popup = ({ onClose, onSubmit }: Props) => {
     noScroll.off();
 
     onSubmit({
-      name, email, tasks
+      name,
+      email,
+      tasks,
     });
   };
 
   return (
     <div
-      className={classNames(
-        classes.root,
-        sectionClasses.columnCenter,
-        { [classes.dirty]: dirty })}
+      className={classNames(classes.root, sectionClasses.columnCenter, {
+        [classes.dirty]: dirty,
+      })}
       onClick={closePopup}
     >
-      <form className={classNames(classes.form, sectionClasses.columnCenter)}
-        onClick={e => e.stopPropagation()} onSubmit={submit}>
+      <form
+        className={classNames(classes.form, sectionClasses.columnCenter)}
+        onClick={(e) => e.stopPropagation()}
+        onSubmit={submit}
+      >
+        <span className={classNames(sectionClasses.p, classes.label)}>Имя</span>
+        <input
+          type="text"
+          className={classes.input}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
 
         <span className={classNames(sectionClasses.p, classes.label)}>
-          Имя</span>
-        <input type='text' className={classes.input}
-          value={name} onChange={e => setName(e.target.value)}
-          required />
+          Email
+        </span>
+        <input
+          type="email"
+          className={classes.input}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
 
         <span className={classNames(sectionClasses.p, classes.label)}>
-          Email</span>
-        <input type='email' className={classes.input}
-          value={email} onChange={e => setEmail(e.target.value)}
-          required />
+          Задачи
+        </span>
+        <textarea
+          rows={7}
+          className={classes.input}
+          value={tasks}
+          onChange={(e) => setTasks(e.target.value)}
+          required
+        />
 
-        <span className={classNames(sectionClasses.p, classes.label)}>
-          Задачи</span>
-        <textarea rows={7} className={classes.input}
-          value={tasks} onChange={e => setTasks(e.target.value)}
-          required />
-
-        <Button type="submit" className={classes.button}>Отправить</Button>
+        <Button type="submit" className={classes.button}>
+          Отправить
+        </Button>
       </form>
     </div>
   );

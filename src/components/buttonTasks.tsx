@@ -11,9 +11,9 @@ const useStyles = createUseStyles({
       marginTop: 60,
     },
     [mediaQueries.upLg]: {
-      marginTop: 80
+      marginTop: 80,
     },
-  }
+  },
 });
 
 export const ButtonTasks = () => {

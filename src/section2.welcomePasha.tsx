@@ -8,8 +8,9 @@ export const SectionWelcomePasha = () => {
     <div className={classes.root}>
       <div className={classes.textContainer}>
         <p className={classes.p}>
-          Знакомтесь, это Паша.<br />
-        Паша - предприниматель.
+          Знакомтесь, это Паша.
+          <br />
+          Паша - предприниматель.
         </p>
         <p className={classes.p}>
           Паше нужен новый сотрудник в команду, но он весь в сомнениях...

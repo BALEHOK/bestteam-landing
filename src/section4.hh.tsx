@@ -7,12 +7,13 @@ export const SectionHH = () => {
   return (
     <div className={classes.root}>
       <div className={classes.textContainer}>
-        <p className={classes.p}>
-          Что же пришло Паше в голову?
-        </p>
+        <p className={classes.p}>Что же пришло Паше в голову?</p>
       </div>
-      <img className={classes.image} src={pasha3}
-        alt="Обычный метод написания вакансий?" />
+      <img
+        className={classes.image}
+        src={pasha3}
+        alt="Обычный метод написания вакансий?"
+      />
     </div>
   );
 };

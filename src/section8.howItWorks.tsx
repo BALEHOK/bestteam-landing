@@ -20,7 +20,7 @@ export const useStyles = createUseStyles({
   textContainer: {
     position: 'relative',
     textAlign: 'center',
-    maxWidth: 650
+    maxWidth: 650,
   },
   oval1: {
     position: 'absolute',
@@ -32,22 +32,22 @@ export const useStyles = createUseStyles({
       transform: 'translate3d(-50%, -30px, 0)',
     },
     [mediaQueries.upLg]: {
-      height: 450
-    }
+      height: 450,
+    },
   },
   ctaContainer: {
     position: 'relative',
     [mediaQueries.downXs]: {
       margin: '0 auto',
-      maxWidth: 350
+      maxWidth: 350,
     },
     [mediaQueries.upMd]: {
       margin: '0 95px',
-      maxWidth: 420
+      maxWidth: 420,
     },
     [mediaQueries.upLg]: {
       margin: '0 115px',
-    }
+    },
   },
   arrowDownImage: {
     position: 'absolute',
@@ -55,16 +55,16 @@ export const useStyles = createUseStyles({
     right: 0,
     height: '50%',
     [mediaQueries.upXs]: {
-      right: -30
+      right: -30,
     },
     [mediaQueries.upMd]: {
       top: '20%',
       right: -30,
-      height: '50%'
+      height: '50%',
     },
     [mediaQueries.upLg]: {
       right: -90,
-    }
+    },
   },
   sub: {
     lineHeight: 1,
@@ -79,9 +79,9 @@ export const useStyles = createUseStyles({
   fullWidthP: {
     [mediaQueries.upXs]: {
       marginLeft: '15%',
-      marginRight: '15%'
-    }
-  }
+      marginRight: '15%',
+    },
+  },
 });
 
 export const Section8HowItWorks = () => {
@@ -95,18 +95,18 @@ export const Section8HowItWorks = () => {
         <img
           className={classesPashaSection.image}
           src={pasha6}
-          alt="Опишите задачи для будущего сотрудника" />
+          alt="Опишите задачи для будущего сотрудника"
+        />
         <div className={classes.textContainer}>
           <img src={oval1} className={classes.oval1} />
           <p className={classesPashaSection.p}>
             Опишите задачи для будущего сотрудника.
           </p>
           <sub className={classes.sub}>
-            Не думайте над правильными формулировками.
-            Если понимаете, какой нужен результат от
-            выполненной работы, тоже укажите.
+            Не думайте над правильными формулировками. Если понимаете, какой
+            нужен результат от выполненной работы, тоже укажите.
           </sub>
-          <div className={classes.ctaContainer} >
+          <div className={classes.ctaContainer}>
             <img src={arrowDown} className={classes.arrowDownImage} />
             <p className={classesPashaSection.p}>
               Напишите задачи в эту форму.
@@ -117,21 +117,22 @@ export const Section8HowItWorks = () => {
             На указанный e-mail в течение 24 часов придет ответ.
           </sub>
           <p className={classesPashaSection.p}>
-            Вы получите наиболее подходящую под задачи должность
-            и подготовленное описание вакансии.
+            Вы получите наиболее подходящую под задачи должность и
+            подготовленное описание вакансии.
           </p>
         </div>
       </div>
 
-      <p className={
-        classNames(
+      <p
+        className={classNames(
           classesSection.marginTop,
           classesSection.p,
           classes.fullWidthP
-        )}>
-        Мы искренне хотим вам помочь найти лучшего человека в команду,
-        поэтому формальных, неискренних и халтурных описаний вакансий
-        с нашей стороны не ждите!
+        )}
+      >
+        Мы искренне хотим вам помочь найти лучшего человека в команду, поэтому
+        формальных, неискренних и халтурных описаний вакансий с нашей стороны не
+        ждите!
       </p>
     </>
   );

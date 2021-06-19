@@ -7,19 +7,16 @@ export const Section4Hours2 = () => {
   return (
     <>
       <div className={classes.root}>
-        <p className={classes.p}>
-          Прошло 4 часа...
-        </p>
+        <p className={classes.p}>Прошло 4 часа...</p>
       </div>
       <div className={classes.root}>
         <img
           className={classes.image}
           src={pasha4}
-          alt="Проблемы с традиционными методами найма" />
+          alt="Проблемы с традиционными методами найма"
+        />
         <div className={classes.textContainer}>
-          <p className={classes.p}>
-            Так себе варианты.
-          </p>
+          <p className={classes.p}>Так себе варианты.</p>
         </div>
       </div>
     </>

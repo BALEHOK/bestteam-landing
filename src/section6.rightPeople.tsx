@@ -7,12 +7,13 @@ export const SectionRightPeople = () => {
   return (
     <div className={classes.root}>
       <div className={classes.textContainer}>
-        <p className={classes.p}>
-          Паша понимает всю важность проблемы.
-        </p>
+        <p className={classes.p}>Паша понимает всю важность проблемы.</p>
       </div>
-      <img className={classes.image} src={pasha5}
-        alt="Правильные люди на правильных позициях" />
+      <img
+        className={classes.image}
+        src={pasha5}
+        alt="Правильные люди на правильных позициях"
+      />
     </div>
   );
 };

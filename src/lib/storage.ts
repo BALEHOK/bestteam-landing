@@ -1,6 +1,6 @@
 export interface IStorage {
-    set(key: string, value: string): void;
-    get(key: string): any;
+  set(key: string, value: string): void;
+  get(key: string): any;
 }
 
 export class Storage implements IStorage {

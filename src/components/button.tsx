@@ -2,9 +2,10 @@ import classNames from 'classnames';
 import { createUseStyles } from 'react-jss';
 import { colors, fonts, mediaQueries } from '../lib/styleUtils';
 
-
 type Props = React.DetailedHTMLProps<
-  React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>;
 
 const useStyles = createUseStyles({
   root: {
@@ -20,20 +21,20 @@ const useStyles = createUseStyles({
     [mediaQueries.upXs]: {
       borderRadius: 5,
       fontSize: 48,
-      padding: '10px 20px'
+      padding: '10px 20px',
     },
     [mediaQueries.upLg]: {
       borderRadius: 10,
       fontSize: 60,
-      padding: '12px 26px'
+      padding: '12px 26px',
     },
 
     '&:hover': {
-      backgroundColor: colors.orange2
+      backgroundColor: colors.orange2,
     },
     '&:active': {
       filter: 'brightness(85%)',
-    }
+    },
   },
 });
 
@@ -41,7 +42,7 @@ export const Button = ({ children, className, ...rest }: Props) => {
   const classes = useStyles();
 
   return (
-    <button className={classNames(classes.root, className)} {...rest} >
+    <button className={classNames(classes.root, className)} {...rest}>
       {children}
     </button>
   );

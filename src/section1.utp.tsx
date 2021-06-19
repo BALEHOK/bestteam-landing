@@ -9,15 +9,13 @@ const useStyles = createUseStyles({
     margin: '35px 0 0',
     [mediaQueries.upXs]: {
       margin: '50px auto 0',
-      width: 600
+      width: 600,
     },
     [mediaQueries.upLg]: {
       margin: '60px 190px 0',
-      width: 'auto'
+      width: 'auto',
     },
   },
-
-
 });
 
 export const SectionUtp = () => {
@@ -27,8 +25,8 @@ export const SectionUtp = () => {
   return (
     <FramedSection>
       <h1 className={classesSection.h1}>
-        Напишите задачи будущего сотрудника и получите на e-mail готовое
-        на 80% описание вакансии
+        Напишите задачи будущего сотрудника и получите на e-mail готовое на 80%
+        описание вакансии
       </h1>
       <div className={classes.points}>
         <div className={classesSection.point}>
@@ -40,8 +38,8 @@ export const SectionUtp = () => {
           понятно даже вашей маме
         </div>
         <div className={classesSection.point}>
-          предложим на выбор &quot;продающие&quot; варианты описания
-          компании и продукта, требуемого опыта и нефинансовых бенефитов
+          предложим на выбор &quot;продающие&quot; варианты описания компании и
+          продукта, требуемого опыта и нефинансовых бенефитов
         </div>
         <div className={classesSection.point}>
           подскажем, как лучше дать информацию о зарплате и бонусах

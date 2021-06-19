@@ -33,10 +33,10 @@ const useStyles = createUseStyles({
         width: 500,
       },
       [mediaQueries.upLg]: {
-        width: 1000
-      }
-    }
-  }
+        width: 1000,
+      },
+    },
+  },
 });
 
 export const SectionNeedBT = () => {

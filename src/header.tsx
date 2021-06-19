@@ -11,26 +11,26 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     [mediaQueries.upXs]: {
       height: 85,
-      padding: 15
+      padding: 15,
     },
     [mediaQueries.upLg]: {
-      padding: '15px 55px'
+      padding: '15px 55px',
     },
   },
   logo: {
-    height: '100%'
+    height: '100%',
   },
   slogan: {
     fontFamily: fonts.bt,
     color: colors.blue,
     fontSize: 20,
     [mediaQueries.upXs]: {
-      fontSize: 40
+      fontSize: 40,
     },
     [mediaQueries.upLg]: {
-      fontSize: 48
+      fontSize: 48,
     },
-  }
+  },
 });
 
 export const Header = () => {

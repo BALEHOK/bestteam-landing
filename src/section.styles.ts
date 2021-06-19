@@ -10,6 +10,9 @@ interface Props {
 const p: JssStyle = {
   fontSize: 16,
   [mediaQueries.upXs]: {
+    fontSize: 20,
+  },
+  [mediaQueries.upMd]: {
     fontSize: 24,
   },
   [mediaQueries.upLg]: {
@@ -51,10 +54,7 @@ export const useSectionStyles = createUseStyles({
   },
   h2: {
     color: colors.darkBlue,
-    fontSize: 18,
-    [mediaQueries.upXs]: {
-      fontSize: 28,
-    },
+    fontSize: 28,
     [mediaQueries.upLg]: {
       fontSize: 56,
     },
@@ -124,9 +124,13 @@ export const usePashaSectionStyles = createUseStyles<string, Props>({
     [mediaQueries.upXs]: {
       flex: 1,
 
+      marginLeft: ({ imageRight }: Props) => (imageRight ? 0 : 55),
+      marginRight: ({ imageRight }: Props) => (imageRight ? 55 : 0),
+      textAlign: ({ imageRight }: Props) => (imageRight ? 'right' : 'left'),
+    },
+    [mediaQueries.upMd]: {
       marginLeft: ({ imageRight }: Props) => (imageRight ? 0 : 65),
       marginRight: ({ imageRight }: Props) => (imageRight ? 65 : 0),
-      textAlign: ({ imageRight }: Props) => (imageRight ? 'right' : 'left'),
     },
   },
   p,
@@ -135,6 +139,9 @@ export const usePashaSectionStyles = createUseStyles<string, Props>({
       width: '100%',
     },
     [mediaQueries.upXs]: {
+      height: 300,
+    },
+    [mediaQueries.upMd]: {
       height: 415,
     },
     [mediaQueries.upLg]: {

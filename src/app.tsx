@@ -1,6 +1,6 @@
 import { Header } from './header';
 import { createUseStyles } from 'react-jss';
-import { fonts, mediaQueries } from './lib/styleUtils';
+import { fonts, mediaBreakpoints, mediaQueries } from './lib/styleUtils';
 import { SectionUtp } from './section1.utp';
 import { useState } from 'react';
 import { SectionWelcomePasha } from './section2.welcomePasha';
@@ -13,20 +13,26 @@ import { Popup } from './popup';
 import { AppContext } from './appContext';
 import { Section8HowItWorks } from './section8.howItWorks';
 import { Section11Team } from './section11.team';
+import { ButtonTasks } from './components/buttonTasks';
 
 const apiHost = process.env.REACT_APP_API_HOST || 'http://localhost:4000';
 
 const useStyles = createUseStyles({
   root: {
     fontFamily: fonts.primary,
-    maxWidth: 1920,
+    maxWidth: mediaBreakpoints.xs,
     margin: '0 auto',
     padding: 10,
     [mediaQueries.upXs]: {
       padding: 30,
+      maxWidth: 1024,
+    },
+    [mediaQueries.upMd]: {
+      maxWidth: 1280,
     },
     [mediaQueries.upLg]: {
       padding: 65,
+      maxWidth: 1920,
     },
   },
 });
@@ -44,8 +50,8 @@ const sendTasks = (tasks, tryNumber = 1) => {
     } else {
       alert(
         'Случилась какая-то ошибка и ваш запрос не был отправлен. ' +
-          'Попробуйте еще раз или напишите нам на info@bestteam.io. ' +
-          'Хорошего дня!'
+        'Попробуйте еще раз или напишите нам на info@bestteam.io. ' +
+        'Хорошего дня!'
       );
     }
   });
@@ -76,6 +82,8 @@ const App = () => {
           <SectionNeedBT />
           <Section8HowItWorks />
           <Section11Team />
+
+          <ButtonTasks />
         </main>
 
         {popupVisible && <Popup onClose={onClose} onSubmit={onTasksSubmit} />}

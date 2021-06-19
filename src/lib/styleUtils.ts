@@ -1,11 +1,13 @@
 export const mediaBreakpoints = {
-  xs: 600,
+  xs: 768,
   md: 1280,
   lg: 1600,
 };
 
 const makeMediaQuery = (upOrDown: 'up' | 'down', width: number) =>
-  `@media (${upOrDown === 'up' ? 'min' : 'max'}-width: ${width}px)`;
+  upOrDown === 'up'
+    ? `@media (min-width: ${width + 1}px)`
+    : `@media (max-width: ${width}px)`;
 
 export const mediaQueries = {
   downXs: makeMediaQuery('down', mediaBreakpoints.xs),

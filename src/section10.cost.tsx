@@ -40,7 +40,7 @@ const useStyles = createUseStyles({
   },
 });
 
-export const SectionCost = () => {
+export const Section10Cost = () => {
   const classes = useStyles();
   const classesSection = useSectionStyles();
 

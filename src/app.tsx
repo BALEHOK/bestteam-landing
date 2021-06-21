@@ -14,9 +14,10 @@ import { AppContext } from './appContext';
 import { Section8HowItWorks } from './section8.howItWorks';
 import { Section11Team } from './section11.team';
 import { ButtonTasks } from './components/buttonTasks';
-import { SectionCost } from './section10.cost';
+import { Section10Cost } from './section10.cost';
 import { Section12ToWhom } from './section12.toWhom';
 import { Section13Reviews } from './section13.reviews';
+import { Section14Deal } from './section14.deal';
 
 const apiHost = process.env.REACT_APP_API_HOST || 'http://localhost:4000';
 
@@ -84,12 +85,11 @@ const App = () => {
           <SectionRightPeople />
           <SectionNeedBT />
           <Section8HowItWorks />
-          <SectionCost />
+          <Section10Cost />
           <Section11Team />
           <Section12ToWhom />
           <Section13Reviews />
-
-          <ButtonTasks />
+          <Section14Deal />
         </main>
 
         {popupVisible && <Popup onClose={onClose} onSubmit={onTasksSubmit} />}

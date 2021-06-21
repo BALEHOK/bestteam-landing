@@ -110,10 +110,10 @@ export const Popup = ({ onClose, onSubmit }: Props) => {
         />
 
         <span className={classNames(sectionClasses.p, classes.label)}>
-          Email
+          Телеграм (или email)
         </span>
         <input
-          type="email"
+          type="text"
           className={classes.input}
           value={email}
           onChange={(e) => setEmail(e.target.value)}

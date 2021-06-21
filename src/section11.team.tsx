@@ -2,7 +2,6 @@ import { createUseStyles } from 'react-jss';
 import { colors, mediaQueries } from './lib/styleUtils';
 import { FramedSection } from './components/framedSection';
 import { useSectionStyles } from './section.styles';
-import { ButtonTasks } from './components/buttonTasks';
 import halfOvalBeige from './assets/half-oval-beige.svg';
 import halfOvalBlue from './assets/half-oval-blue.svg';
 import aleksandrShukletsov from './assets/aleksandr-shukletsov.jpg';

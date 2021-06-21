@@ -20,16 +20,6 @@ const p: JssStyle = {
   },
 };
 
-const text: JssStyle = {
-  fontSize: 16,
-  [mediaQueries.upXs]: {
-    fontSize: 17,
-  },
-  [mediaQueries.upLg]: {
-    fontSize: 32,
-  },
-};
-
 export const useSectionStyles = createUseStyles({
   marginTop: {
     marginTop: 60,
@@ -75,7 +65,18 @@ export const useSectionStyles = createUseStyles({
     },
   },
   p,
-  text,
+  text: {
+    fontSize: 16,
+    [mediaQueries.upXs]: {
+      fontSize: 17,
+    },
+    [mediaQueries.upLg]: {
+      fontSize: 32,
+    },
+    '& li': {
+      marginBottom: '10pt',
+    },
+  },
   fullWidthText: {
     [mediaQueries.upXs]: {
       marginLeft: '15%',

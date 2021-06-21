@@ -16,6 +16,7 @@ import { Section11Team } from './section11.team';
 import { ButtonTasks } from './components/buttonTasks';
 import { SectionCost } from './section10.cost';
 import { Section12ToWhom } from './section12.toWhom';
+import { Section13Reviews } from './section13.reviews';
 
 const apiHost = process.env.REACT_APP_API_HOST || 'http://localhost:4000';
 
@@ -86,6 +87,7 @@ const App = () => {
           <SectionCost />
           <Section11Team />
           <Section12ToWhom />
+          <Section13Reviews />
 
           <ButtonTasks />
         </main>

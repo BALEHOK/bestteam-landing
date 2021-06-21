@@ -10,6 +10,7 @@ const useStyles = createUseStyles({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     justifyContent: 'center',
+    minHeight: 200,
     [mediaQueries.downXs]: {
       width: '100%',
       backgroundSize: 'auto 100%',
@@ -46,15 +47,19 @@ export const SectionNeedBT = () => {
     <>
       <div className={classesSection.marginTop}>
         <p className={classesSection.p}>
-          Паше нужен сервис &quot;BestTeam&quot; Он поможет разобраться с тем
+          Паше нужен сервис &quot;BestTeam&quot;. Он поможет разобраться с тем
         </p>
         <div>
           <div className={classesSection.point}>
             какая должность наилучшим образом соответствует задачам
           </div>
           <div className={classesSection.point}>
-            как сформулировать &quot;продающее&quot; описание вакансии и
-            получить больше качественных откликов
+            как грамотно сформулировать описание вакансии и получить релевантные
+            отклики
+          </div>
+          <div className={classesSection.point}>
+            как оценить кандидатов на этапе найма и во время испытательного
+            срока
           </div>
         </div>
       </div>
@@ -67,8 +72,8 @@ export const SectionNeedBT = () => {
       >
         <h2 className={classesSection.h2}>Результат</h2>
         <p className={classesSection.p}>
-          Паша поймет, кого конкретно искать и получит на 80% готовое описание
-          вакансии, которое снизит вероятность ошибки в найме.
+          Паша поймет, кого конкретно искать и снизит риск нанять &quot;не того
+          человека&quot;.
         </p>
       </div>
     </>

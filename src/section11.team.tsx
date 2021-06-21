@@ -5,6 +5,7 @@ import { useSectionStyles } from './section.styles';
 import halfOvalBeige from './assets/half-oval-beige.svg';
 import halfOvalBlue from './assets/half-oval-blue.svg';
 import aleksandrShukletsov from './assets/aleksandr-shukletsov.jpg';
+import mariaPankina from './assets/maria-pankina.jpg';
 import classNames from 'classnames';
 
 const useStyles = createUseStyles({
@@ -96,7 +97,7 @@ export const Section11Team = () => {
           />
           <img
             className={classNames(classes.blueBorder, classes.photo)}
-            src={aleksandrShukletsov}
+            src={mariaPankina}
             alt="Мария Панькина"
           />
         </div>
@@ -153,14 +154,16 @@ export const Section11Team = () => {
           <p className={classesSection.text}>
             Я - профессиональный инженер. Отлично разбираюсь в современных
             технологиях.
-            <br />
-            <br />
-            Более 10 лет опыта в IT. Руководил командами разработчиков в России
-            и за рубежом. Работал в ентерпрайзе и стартапах. Проводил
-            технические собеседования с программистами всех уровней. Нанимал
-            людей для собственной онлайн школы.
-            <br />
-            <br />
+            <ul>
+              <li>Более 10 лет опыта в IT.</li>
+              <li>Руководил командами разработчиков в России и за рубежом.</li>
+              <li>Работал в ентерпрайзе и стартапах.</li>
+              <li>
+                Проводил технические собеседования с программистами всех
+                уровней.
+              </li>
+              <li>Нанимал людей для собственной онлайн школы.</li>
+            </ul>
             Верю, что не надо делать самому то, что не умеешь. Вместо этого
             лучше сфокусироваться на задачах бизнеса, в которых разбираешься и
             заработать больше денег.

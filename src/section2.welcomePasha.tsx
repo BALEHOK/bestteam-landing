@@ -12,9 +12,7 @@ export const SectionWelcomePasha = () => {
           <br />
           Паша - предприниматель.
         </p>
-        <p className={classes.p}>
-          Паше нужен новый сотрудник в команду, но он весь в сомнениях...
-        </p>
+        <p className={classes.p}>Паше нужен новый сотрудник в команду.</p>
       </div>
       <img className={classes.image} src={pasha1} alt="С чего начать?" />
     </div>

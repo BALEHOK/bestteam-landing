@@ -75,6 +75,7 @@ export const useSectionStyles = createUseStyles({
     },
     '& li': {
       marginBottom: '10pt',
+      textAlign: 'left',
     },
   },
   fullWidthText: {

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.9deb49af.chunk.css",
-    "main.js": "./static/js/main.31bb5a0c.chunk.js",
-    "main.js.map": "./static/js/main.31bb5a0c.chunk.js.map",
+    "main.js": "./static/js/main.4d884be1.chunk.js",
+    "main.js.map": "./static/js/main.4d884be1.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.2c15981c.js",
     "runtime-main.js.map": "./static/js/runtime-main.2c15981c.js.map",
     "static/js/2.7b74955d.chunk.js": "./static/js/2.7b74955d.chunk.js",
@@ -28,12 +28,13 @@
     "static/media/pasha4.2.1c7f801c.svg": "./static/media/pasha4.2.1c7f801c.svg",
     "static/media/pasha5.52d0c3a8.svg": "./static/media/pasha5.52d0c3a8.svg",
     "static/media/pasha6.f0c24a57.svg": "./static/media/pasha6.f0c24a57.svg",
-    "static/media/pasha7.cost.160a052d.svg": "./static/media/pasha7.cost.160a052d.svg"
+    "static/media/pasha7.cost.160a052d.svg": "./static/media/pasha7.cost.160a052d.svg",
+    "static/media/pasha8.deal.553d9e1c.svg": "./static/media/pasha8.deal.553d9e1c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2c15981c.js",
     "static/js/2.7b74955d.chunk.js",
     "static/css/main.9deb49af.chunk.css",
-    "static/js/main.31bb5a0c.chunk.js"
+    "static/js/main.4d884be1.chunk.js"
   ]
 }

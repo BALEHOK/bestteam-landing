@@ -13,7 +13,6 @@ import { Popup } from './popup';
 import { AppContext } from './appContext';
 import { Section8HowItWorks } from './section8.howItWorks';
 import { Section11Team } from './section11.team';
-import { ButtonTasks } from './components/buttonTasks';
 import { Section10Cost } from './section10.cost';
 import { Section12ToWhom } from './section12.toWhom';
 import { Section13Reviews } from './section13.reviews';

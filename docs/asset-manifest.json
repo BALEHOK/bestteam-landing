@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.9deb49af.chunk.css",
-    "main.js": "./static/js/main.4d884be1.chunk.js",
-    "main.js.map": "./static/js/main.4d884be1.chunk.js.map",
+    "main.js": "./static/js/main.4e11d59e.chunk.js",
+    "main.js.map": "./static/js/main.4e11d59e.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.2c15981c.js",
     "runtime-main.js.map": "./static/js/runtime-main.2c15981c.js.map",
     "static/js/2.7b74955d.chunk.js": "./static/js/2.7b74955d.chunk.js",
@@ -12,12 +12,13 @@
     "index.html": "./index.html",
     "static/css/main.9deb49af.chunk.css.map": "./static/css/main.9deb49af.chunk.css.map",
     "static/js/2.7b74955d.chunk.js.LICENSE.txt": "./static/js/2.7b74955d.chunk.js.LICENSE.txt",
-    "static/media/aleksandr-shukletsov.b05945a1.jpg": "./static/media/aleksandr-shukletsov.b05945a1.jpg",
+    "static/media/aleksandr-shukletsov.fd5aad10.jpg": "./static/media/aleksandr-shukletsov.fd5aad10.jpg",
     "static/media/arrow-down.6acef176.svg": "./static/media/arrow-down.6acef176.svg",
     "static/media/flag-bullet.9328461c.svg": "./static/media/flag-bullet.9328461c.svg",
     "static/media/half-oval-beige.77f65d35.svg": "./static/media/half-oval-beige.77f65d35.svg",
     "static/media/half-oval-blue.66510258.svg": "./static/media/half-oval-blue.66510258.svg",
     "static/media/logo.c19ee2d3.png": "./static/media/logo.c19ee2d3.png",
+    "static/media/maria-pankina.db92e145.jpg": "./static/media/maria-pankina.db92e145.jpg",
     "static/media/oval-blue.2ce2bfbd.svg": "./static/media/oval-blue.2ce2bfbd.svg",
     "static/media/oval1-beige.166e9dfb.svg": "./static/media/oval1-beige.166e9dfb.svg",
     "static/media/oval1.b7735cd1.svg": "./static/media/oval1.b7735cd1.svg",
@@ -35,6 +36,6 @@
     "static/js/runtime-main.2c15981c.js",
     "static/js/2.7b74955d.chunk.js",
     "static/css/main.9deb49af.chunk.css",
-    "static/js/main.4d884be1.chunk.js"
+    "static/js/main.4e11d59e.chunk.js"
   ]
 }

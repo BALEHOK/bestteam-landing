@@ -33,6 +33,9 @@ const text: JssStyle = {
 export const useSectionStyles = createUseStyles({
   marginTop: {
     marginTop: 60,
+    [mediaQueries.upMd]: {
+      marginTop: 80,
+    },
     [mediaQueries.upLg]: {
       marginTop: 124,
     },
@@ -73,6 +76,12 @@ export const useSectionStyles = createUseStyles({
   },
   p,
   text,
+  fullWidthText: {
+    [mediaQueries.upXs]: {
+      marginLeft: '15%',
+      marginRight: '15%',
+    },
+  },
   point: {
     backgroundImage: `url(${flagBullet})`,
     backgroundRepeat: 'no-repeat',

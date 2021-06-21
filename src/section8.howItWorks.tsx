@@ -4,6 +4,7 @@ import { createUseStyles } from 'react-jss';
 import pasha6 from './assets/pasha6.svg';
 import arrowDown from './assets/arrow-down.svg';
 import oval1 from './assets/oval1.svg';
+import oval2 from './assets/oval2.svg';
 import { mediaQueries } from './lib/styleUtils';
 import { usePashaSectionStyles, useSectionStyles } from './section.styles';
 
@@ -12,6 +13,7 @@ export const useStyles = createUseStyles({
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
+    position: 'relative',
     [mediaQueries.upXs]: {
       flexDirection: 'row',
       justifyContent: 'space-between',
@@ -33,6 +35,18 @@ export const useStyles = createUseStyles({
     },
     [mediaQueries.upLg]: {
       height: 450,
+    },
+  },
+  oval2: {
+    position: 'absolute',
+    zIndex: -1,
+    height: 120,
+    left: '10%',
+    [mediaQueries.upXs]: {
+      height: 240,
+    },
+    [mediaQueries.upLg]: {
+      height: 480,
     },
   },
   ctaContainer: {
@@ -76,12 +90,6 @@ export const useStyles = createUseStyles({
       fontSize: 32,
     },
   },
-  fullWidthP: {
-    [mediaQueries.upXs]: {
-      marginLeft: '15%',
-      marginRight: '15%',
-    },
-  },
 });
 
 export const Section8HowItWorks = () => {
@@ -123,11 +131,12 @@ export const Section8HowItWorks = () => {
         </div>
       </div>
 
+      <img src={oval2} className={classes.oval2} />
       <p
         className={classNames(
           classesSection.marginTop,
           classesSection.p,
-          classes.fullWidthP
+          classesSection.fullWidthText
         )}
       >
         Мы искренне хотим вам помочь найти лучшего человека в команду, поэтому

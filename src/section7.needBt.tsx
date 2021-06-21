@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-import { ButtonTasks } from './components/buttonTasks';
 import { createUseStyles } from 'react-jss';
 import { useSectionStyles } from './section.styles';
 import ovalBlue from './assets/oval-blue.svg';

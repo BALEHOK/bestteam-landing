@@ -18,7 +18,7 @@ export const Section12ToWhom = () => {
         </div>
         <div className={classesSection.point}>
           <span>
-            <b>HR специалист.</b>
+            <b>Директор малого бизнеса.</b>
             <br />
             Сможете четко сформулировать задачи и составить классную вакансию с
             целевыми откликами.

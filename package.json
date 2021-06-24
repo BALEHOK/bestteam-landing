@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "package": "cp ./docs/CNAME ./public && rm -rf ./docs && mv ./public ./docs",
+    "deploy": "yarn build && yarn package && git add . && git commit -m \"build\" && git push"
   },
   "dependencies": {
     "classnames": "^2.3.1",

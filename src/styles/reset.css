@@ -347,8 +347,3 @@ template {
 [hidden] {
   display: none;
 }
-
-@font-face {
-  font-family: "BT Regular";
-  src: url(/fonts/Russian-Regular.ttf) format("truetype");
-}

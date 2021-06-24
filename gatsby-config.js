@@ -16,6 +16,7 @@ module.exports = {
         "background_color": "#ffffff"
       },
     },
+    'gatsby-plugin-react-helmet'
   ],
 };
 

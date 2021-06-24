@@ -2,6 +2,8 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+const isProd = process.env.NODE_ENV === 'production';
+
 module.exports = {
   siteMetadata: {
     title: "BestTeam",
@@ -20,8 +22,19 @@ module.exports = {
         "background_color": "#ffffff"
       },
     },
-    'gatsby-plugin-react-helmet'
-  ],
+    'gatsby-plugin-react-helmet',
+    isProd && {
+      resolve: 'gatsby-plugin-yandex-metrika',
+      options: {
+        trackingId: 75405811,
+        afterBody: true,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      }
+    }
+  ].filter(Boolean),
 };
 
 

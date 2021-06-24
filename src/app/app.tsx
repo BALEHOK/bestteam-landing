@@ -20,7 +20,7 @@ import { Section13Reviews } from './section13.reviews';
 import { Section14Deal } from './section14.deal';
 import { Helmet } from "react-helmet";
 
-const apiHost = process.env.REACT_APP_API_HOST || 'http://localhost:4000';
+const apiHost = process.env.GATSBY_API_URL || 'http://localhost:4000';
 
 const useStyles = createUseStyles({
   root: {

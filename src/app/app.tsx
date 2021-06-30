@@ -18,7 +18,7 @@ import { Section10Cost } from './section10.cost';
 import { Section12ToWhom } from './section12.toWhom';
 import { Section13Reviews } from './section13.reviews';
 import { Section14Deal } from './section14.deal';
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
 
 const apiHost = process.env.GATSBY_API_URL || 'http://localhost:4000';
 
@@ -76,8 +76,11 @@ export const App = () => {
   return (
     <AppContext.Provider value={{ setPopupVisible }}>
       <Helmet>
-        <title>BestTeam</title>
-        <meta name="description" content="Составьте текст вакансии и наймите лучших специалистов" />
+        <title>Составить текст вакансии | BestTeam</title>
+        <meta
+          name="description"
+          content="Как составить текст вакансии и нанять лучших специалистов"
+        />
       </Helmet>
       <div className={classes.root}>
         <Header />
